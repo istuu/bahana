@@ -12,3 +12,5 @@
 */
 
 Route::resource('/','Frontend\HomeController');
+Route::resource('news','Frontend\NewsController');
+Route::resource('gallery','Frontend\GalleryController');

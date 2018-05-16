@@ -3,26 +3,7 @@
 @section('contents')
 <div class="container">
 
-    <div class="row">
-        <div class="col-sm-12">
-
-            <p>&nbsp;</p>
-        </div>
-    </div>
-
-    <!-- Page-Title -->
-    <div class="row">
-        <div class="col-md-3">
-            <!-- Simple card -->
-            <div class="card m-b-20">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make
-                        up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                </div>
-            </div>
-        </div><!-- end col -->
+        @include('frontend.include.page-title')
 
         <div class="col-md-6">
 
@@ -63,6 +44,55 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
+            </div>
+
+            <div class="card m-t-20">
+                <h6 class="card-header">News</h6>
+                <div class="card-body">
+                    <div class="well">
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                        		<img class="media-object" src="http://placekitten.com/150/150">
+                      		</a>
+                            <div class="card-body ">
+                                <p class="card-title"><strong>Card title of news using as title</strong></p>
+                                <p class="card-text">This is a wider card with supporting text below as a
+                                    natural lead-in to additional content. <a href="">Read More</a></p>
+                                <p class="card-text">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="well">
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="http://placekitten.com/150/150">
+                            </a>
+                            <div class="card-body ">
+                                <p class="card-title"><strong>Card title of news using as title 2 sample text</strong></p>
+                                <p class="card-text">This is a wider card with supporting text below as a
+                                    natural lead-in to additional content. <a href="">Read More</a></p>
+                                <p class="card-text">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card m-b-20 card-inverse text-white">
+                <img class="card-img img-fluid" src="{{ asset('frontend') }}/assets/images/gallery/3.jpg" alt="Card image">
+                <!-- <div class="card-img-overlay">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a
+                        natural lead-in to additional content. This content is a little bit
+                        longer.</p>
+                </div> -->
             </div>
         </div>
     </div>

@@ -67,8 +67,8 @@
         <script src="{{ asset('frontend') }}/assets/js/jquery.app.js"></script>
 
         <!-- Page specific js -->
-        <script src="{{ asset('frontend') }}/assets/pages/jquery.dashboard.js"></script>
 
+        @stack('view-script')
 
     </body>
 </html>
